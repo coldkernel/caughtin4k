@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/quantum/Caughtin4K/components/ConvexClientProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport { ReactNode } from \"react\";\nimport { ConvexProvider, ConvexReactClient } from \"convex/react\";\n\nconst convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);\n\nexport default function ConvexClientProvider({ children }: { children: ReactNode }) {\n    return <ConvexProvider client={convex}>{children}</ConvexProvider>;\n}\n"],"names":[],"mappings":";;;;;AAGA;AAAA;AAHA;;;AAKA,MAAM,SAAS,IAAI,6KAAiB;AAErB,SAAS,qBAAqB,EAAE,QAAQ,EAA2B;IAC9E,qBAAO,8OAAC,0KAAc;QAAC,QAAQ;kBAAS;;;;;;AAC5C"}}]
+}

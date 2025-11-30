@@ -1,0 +1,34 @@
+{
+  "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/dashboard/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/legal/acceptable-use/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/legal/cookie-policy/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/legal/privacy/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/legal/terms/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/login/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
+    "[project]/app/signup/page": [
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

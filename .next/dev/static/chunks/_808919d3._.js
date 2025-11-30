@@ -1,0 +1,1487 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/components/PublicInput.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "PublicInput",
+    ()=>PublicInput
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lock.js [app-client] (ecmascript) <export default as Lock>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+function PublicInput({ onScan, isLoading }) {
+    _s();
+    const [gender, setGender] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [username, setUsername] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [context, setContext] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        if (username.trim() && gender) {
+            onScan({
+                username,
+                gender,
+                context
+            });
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].form, {
+        initial: {
+            opacity: 0,
+            y: 20
+        },
+        animate: {
+            opacity: 1,
+            y: 0
+        },
+        exit: {
+            opacity: 0,
+            y: -20
+        },
+        onSubmit: handleSubmit,
+        className: "w-full max-w-2xl mx-auto space-y-8 p-6 bg-black/40 border border-neon-red/20 rounded-2xl backdrop-blur-md shadow-[0_0_30px_rgba(220,38,38,0.1)]",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "space-y-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        className: "block text-neon-red font-mono font-bold tracking-widest text-sm",
+                        children: "1. WHO ARE WE AUDITING?"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 34,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-2 gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setGender("male"),
+                                className: `p-6 border-2 rounded-xl flex flex-col items-center gap-3 transition-all duration-300 group ${gender === "male" ? "border-neon-red bg-neon-red/10 shadow-[0_0_20px_rgba(220,38,38,0.3)]" : "border-gray-800 bg-black/50 hover:border-gray-600"}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-4xl group-hover:scale-110 transition-transform",
+                                        children: "🧢"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/PublicInput.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: `font-mono font-bold tracking-widest ${gender === "male" ? "text-white" : "text-gray-500"}`,
+                                        children: "BOYFRIEND"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/PublicInput.tsx",
+                                        lineNumber: 47,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/PublicInput.tsx",
+                                lineNumber: 38,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>setGender("female"),
+                                className: `p-6 border-2 rounded-xl flex flex-col items-center gap-3 transition-all duration-300 group ${gender === "female" ? "border-neon-red bg-neon-red/10 shadow-[0_0_20px_rgba(220,38,38,0.3)]" : "border-gray-800 bg-black/50 hover:border-gray-600"}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-4xl group-hover:scale-110 transition-transform",
+                                        children: "🎀"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/PublicInput.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: `font-mono font-bold tracking-widest ${gender === "female" ? "text-white" : "text-gray-500"}`,
+                                        children: "GIRLFRIEND"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/PublicInput.tsx",
+                                        lineNumber: 61,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/PublicInput.tsx",
+                                lineNumber: 52,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 37,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/PublicInput.tsx",
+                lineNumber: 33,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "space-y-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        className: "block text-neon-red font-mono font-bold tracking-widest text-sm",
+                        children: "2. DROP THE @HANDLE"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 70,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative group",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute inset-y-0 left-4 flex items-center pointer-events-none",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-neon-red font-mono text-xl",
+                                    children: "@"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/PublicInput.tsx",
+                                    lineNumber: 75,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/PublicInput.tsx",
+                                lineNumber: 74,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                type: "text",
+                                value: username,
+                                onChange: (e)=>setUsername(e.target.value),
+                                placeholder: gender === "female" ? "@her_spam_page" : "@his_main_account",
+                                className: "w-full bg-black/50 border-2 border-gray-700 rounded-xl py-4 pl-12 pr-4 text-xl font-mono text-white placeholder-gray-600 focus:border-neon-red focus:outline-none focus:shadow-[0_0_20px_rgba(220,38,38,0.2)] transition-all duration-300"
+                            }, void 0, false, {
+                                fileName: "[project]/components/PublicInput.tsx",
+                                lineNumber: 77,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 73,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/PublicInput.tsx",
+                lineNumber: 69,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "space-y-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        className: "block text-neon-red font-mono font-bold tracking-widest text-sm",
+                        children: "3. WHY ARE YOU SUSPICIOUS? (OPTIONAL)"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 89,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                        value: context,
+                        onChange: (e)=>setContext(e.target.value),
+                        placeholder: "Spill the tea... (e.g., He hides his phone, he follows randoms, he's acting distant...)",
+                        rows: 3,
+                        className: "w-full bg-black/50 border-2 border-gray-700 rounded-xl p-4 text-base font-mono text-white placeholder-gray-600 focus:border-neon-red focus:outline-none focus:shadow-[0_0_20px_rgba(220,38,38,0.2)] transition-all duration-300 resize-none"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 92,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/PublicInput.tsx",
+                lineNumber: 88,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                type: "submit",
+                disabled: !username.trim() || !gender || isLoading,
+                className: "w-full bg-neon-red text-black font-black text-xl py-6 rounded-xl uppercase tracking-widest hover:bg-white hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:hover:scale-100 disabled:hover:bg-neon-red transition-all duration-300 shadow-[0_0_30px_rgba(220,38,38,0.4)] animate-pulse flex items-center justify-center gap-3",
+                children: [
+                    isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "animate-spin",
+                        children: "⏳"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 107,
+                        columnNumber: 21
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                        className: "w-6 h-6"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PublicInput.tsx",
+                        lineNumber: 109,
+                        columnNumber: 21
+                    }, this),
+                    isLoading ? "SCANNING..." : "EXPOSE THEM NOW"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/PublicInput.tsx",
+                lineNumber: 101,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/PublicInput.tsx",
+        lineNumber: 25,
+        columnNumber: 9
+    }, this);
+}
+_s(PublicInput, "5CLmC1e/DKZnEHgryZu6+astpJM=");
+_c = PublicInput;
+var _c;
+__turbopack_context__.k.register(_c, "PublicInput");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/convex/_generated/api.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/* eslint-disable */ /**
+ * Generated `api` utility.
+ *
+ * THIS CODE IS AUTOMATICALLY GENERATED.
+ *
+ * To regenerate, run `npx convex dev`.
+ * @module
+ */ __turbopack_context__.s([
+    "api",
+    ()=>api,
+    "components",
+    ()=>components,
+    "internal",
+    ()=>internal
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$server$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/convex/dist/esm/server/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$server$2f$api$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/convex/dist/esm/server/api.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$server$2f$components$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/convex/dist/esm/server/components/index.js [app-client] (ecmascript) <locals>");
+;
+const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$server$2f$api$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["anyApi"];
+const internal = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$server$2f$api$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["anyApi"];
+const components = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$server$2f$components$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["componentsGeneric"])();
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/app/data:12f429 [app-client] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
+"use strict";
+
+/* __next_internal_action_entry_do_not_use__ [{"40c714fa66993619ac516bc50de55deee0c837c321":"triggerScan"},"app/actions.ts",""] */ __turbopack_context__.s([
+    "triggerScan",
+    ()=>triggerScan
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-client] (ecmascript)");
+"use turbopack no side effects";
+;
+var triggerScan = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("40c714fa66993619ac516bc50de55deee0c837c321", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "triggerScan"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vYWN0aW9ucy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzZXJ2ZXJcIjtcblxuaW1wb3J0IHsgaW5uZ2VzdCB9IGZyb20gXCJAL2lubmdlc3QvY2xpZW50XCI7XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB0cmlnZ2VyU2NhbihzY2FuSWQ6IHN0cmluZykge1xuICAgIGF3YWl0IGlubmdlc3Quc2VuZCh7XG4gICAgICAgIG5hbWU6IFwiYW5hbHlzaXMuc3VibWl0dGVkXCIsXG4gICAgICAgIGRhdGE6IHsgc2NhbklkIH0sXG4gICAgfSk7XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzdGFydFB1YmxpY1NjYW4oZGF0YTogeyB0YXJnZXRfdXNlcm5hbWU6IHN0cmluZzsgdGFyZ2V0X2dlbmRlcjogXCJtYWxlXCIgfCBcImZlbWFsZVwiIH0pIHtcbiAgICBjb25zb2xlLmxvZyhcIvCfmoAgU2VuZGluZyByZXF1ZXN0IHRvIFB5dGhvbi4uLlwiLCBkYXRhKTtcbiAgICB0cnkge1xuICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKFwiaHR0cDovLzEyNy4wLjAuMTo4MDAwL3NjYW5cIiwge1xuICAgICAgICAgICAgbWV0aG9kOiBcIlBPU1RcIixcbiAgICAgICAgICAgIGhlYWRlcnM6IHtcbiAgICAgICAgICAgICAgICBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIixcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKSxcbiAgICAgICAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsIC8vIEVuc3VyZSBubyBjYWNoaW5nXG4gICAgICAgIH0pO1xuXG4gICAgICAgIGlmICghcmVzcG9uc2Uub2spIHtcbiAgICAgICAgICAgIGNvbnN0IGVycm9yVGV4dCA9IGF3YWl0IHJlc3BvbnNlLnRleHQoKTtcbiAgICAgICAgICAgIGNvbnNvbGUuZXJyb3IoYE1pY3Jvc2VydmljZSBlcnJvciAoJHtyZXNwb25zZS5zdGF0dXN9KTpgLCBlcnJvclRleHQpO1xuICAgICAgICAgICAgdHJ5IHtcbiAgICAgICAgICAgICAgICBjb25zdCBlcnJvckpzb24gPSBKU09OLnBhcnNlKGVycm9yVGV4dCk7XG4gICAgICAgICAgICAgICAgcmV0dXJuIHsgc3VjY2VzczogZmFsc2UsIGVycm9yOiBlcnJvckpzb24uZGV0YWlsIHx8IHJlc3BvbnNlLnN0YXR1c1RleHQgfTtcbiAgICAgICAgICAgIH0gY2F0Y2gge1xuICAgICAgICAgICAgICAgIHJldHVybiB7IHN1Y2Nlc3M6IGZhbHNlLCBlcnJvcjogYE1pY3Jvc2VydmljZSBFcnJvcjogJHtyZXNwb25zZS5zdGF0dXNUZXh0fWAgfTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTtcbiAgICAgICAgY29uc29sZS5sb2coXCLinIUgUHl0aG9uIHJlc3BvbnNlIHJlY2VpdmVkOlwiLCByZXN1bHQuc3RhdHVzKTtcbiAgICAgICAgcmV0dXJuIHsgc3VjY2VzczogdHJ1ZSwgZGF0YTogcmVzdWx0IH07XG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcIlB1YmxpYyBzY2FuIGZhaWxlZDpcIiwgZXJyb3IpO1xuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgZXJyb3I6IFwiQ29ubmVjdGlvbiBSZWZ1c2VkLiBJcyBQeXRob24gcnVubmluZz8gKENoZWNrIHBvcnQgODAwMClcIiB9O1xuICAgIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoibVJBSXNCIn0=
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/UploadZone.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>UploadZone
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/convex/dist/esm/react/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/convex/dist/esm/react/client.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$convex$2f$_generated$2f$api$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/convex/_generated/api.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$3a$12f429__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/app/data:12f429 [app-client] (ecmascript) <text/javascript>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+function UploadZone({ onUpload, isScanning }) {
+    _s();
+    const generateUploadUrl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMutation"])(__TURBOPACK__imported__module__$5b$project$5d2f$convex$2f$_generated$2f$api$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["api"].scans.generateUploadUrl);
+    const createScan = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMutation"])(__TURBOPACK__imported__module__$5b$project$5d2f$convex$2f$_generated$2f$api$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["api"].scans.createScan);
+    const [isUploading, setIsUploading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [uploadStatus, setUploadStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("idle");
+    const handleUpload = async (e)=>{
+        const file = e.target.files?.[0];
+        if (!file) return;
+        setIsUploading(true);
+        setUploadStatus("uploading");
+        try {
+            // 1. Get Upload URL
+            const postUrl = await generateUploadUrl();
+            // 2. POST the file to that URL
+            const result = await fetch(postUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": file.type
+                },
+                body: file
+            });
+            if (!result.ok) {
+                throw new Error(`Upload failed: ${result.statusText}`);
+            }
+            const { storageId } = await result.json();
+            // 3. Call createScan with the resulting storageId
+            const scanId = await createScan({
+                storageId
+            });
+            // 4. Call triggerScan (the Server Action) with the new scanId
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$3a$12f429__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["triggerScan"])(scanId);
+            setUploadStatus("success");
+            if (onUpload) onUpload();
+        } catch (error) {
+            console.error("Upload failed:", error);
+            setUploadStatus("error");
+        } finally{
+            setIsUploading(false);
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex flex-col items-center justify-center p-8 border-2 border-red-500 bg-black text-red-500 font-mono rounded-lg shadow-[0_0_10px_#ff0000] relative overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-[url('/grid.png')] opacity-20 pointer-events-none"
+            }, void 0, false, {
+                fileName: "[project]/components/UploadZone.tsx",
+                lineNumber: 62,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-2xl font-bold mb-4 uppercase tracking-widest animate-pulse",
+                children: "Upload Evidence"
+            }, void 0, false, {
+                fileName: "[project]/components/UploadZone.tsx",
+                lineNumber: 64,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative group cursor-pointer",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "file",
+                        onChange: handleUpload,
+                        disabled: isUploading,
+                        className: "absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
+                    }, void 0, false, {
+                        fileName: "[project]/components/UploadZone.tsx",
+                        lineNumber: 69,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `
+          w-64 h-32 flex items-center justify-center border-2 border-dashed border-red-500 
+          bg-black/50 transition-all duration-300
+          ${isUploading ? "animate-pulse border-solid" : "group-hover:bg-red-900/20 group-hover:shadow-[0_0_15px_#ff0000]"}
+        `,
+                        children: [
+                            uploadStatus === "idle" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-lg glitch-text",
+                                children: "DRAG & DROP OR CLICK"
+                            }, void 0, false, {
+                                fileName: "[project]/components/UploadZone.tsx",
+                                lineNumber: 82,
+                                columnNumber: 25
+                            }, this),
+                            uploadStatus === "uploading" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-lg animate-bounce",
+                                children: "UPLOADING..."
+                            }, void 0, false, {
+                                fileName: "[project]/components/UploadZone.tsx",
+                                lineNumber: 85,
+                                columnNumber: 25
+                            }, this),
+                            uploadStatus === "success" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-lg text-green-500 font-bold",
+                                children: "SUCCESS"
+                            }, void 0, false, {
+                                fileName: "[project]/components/UploadZone.tsx",
+                                lineNumber: 88,
+                                columnNumber: 25
+                            }, this),
+                            uploadStatus === "error" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-lg text-red-700 font-bold",
+                                children: "ERROR"
+                            }, void 0, false, {
+                                fileName: "[project]/components/UploadZone.tsx",
+                                lineNumber: 91,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/UploadZone.tsx",
+                        lineNumber: 76,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/UploadZone.tsx",
+                lineNumber: 68,
+                columnNumber: 13
+            }, this),
+            uploadStatus === "success" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-4 text-sm text-green-400",
+                children: "Scan initiated. Analysis pending..."
+            }, void 0, false, {
+                fileName: "[project]/components/UploadZone.tsx",
+                lineNumber: 97,
+                columnNumber: 17
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/UploadZone.tsx",
+        lineNumber: 61,
+        columnNumber: 9
+    }, this);
+}
+_s(UploadZone, "hsAytBmZCV1T+HVyP2AxfoWTmqo=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMutation"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$client$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMutation"]
+    ];
+});
+_c = UploadZone;
+var _c;
+__turbopack_context__.k.register(_c, "UploadZone");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Ticker.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Ticker",
+    ()=>Ticker
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+"use client";
+;
+;
+const MOCK_RESULTS = [
+    "JESSICA CAUGHT ALEX - SCORE: 12",
+    "BRAD EXPOSED BY SARAH - SCORE: 8",
+    "ANONYMOUS UPLOAD - SCORE: 92 (SAFE)",
+    "TOM'S DMS LEAKED - SCORE: 4",
+    "EMILY VERIFIED LOYAL - SCORE: 98",
+    "CHRIS CAUGHT IN 4K - SCORE: 0"
+];
+function Ticker() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "fixed bottom-0 left-0 w-full bg-neon-red text-black font-bold py-2 overflow-hidden z-50 border-t-2 border-black",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            animate: {
+                x: [
+                    0,
+                    -1000
+                ]
+            },
+            transition: {
+                repeat: Infinity,
+                duration: 20,
+                ease: "linear"
+            },
+            className: "whitespace-nowrap flex gap-8",
+            children: [
+                ...MOCK_RESULTS,
+                ...MOCK_RESULTS,
+                ...MOCK_RESULTS
+            ].map((result, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "uppercase tracking-widest",
+                    children: [
+                        "+++ ",
+                        result,
+                        " +++"
+                    ]
+                }, i, true, {
+                    fileName: "[project]/components/Ticker.tsx",
+                    lineNumber: 27,
+                    columnNumber: 21
+                }, this))
+        }, void 0, false, {
+            fileName: "[project]/components/Ticker.tsx",
+            lineNumber: 17,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Ticker.tsx",
+        lineNumber: 16,
+        columnNumber: 9
+    }, this);
+}
+_c = Ticker;
+var _c;
+__turbopack_context__.k.register(_c, "Ticker");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/ReceiptCard.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ReceiptCard",
+    ()=>ReceiptCard
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$barcode$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Barcode$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/barcode.js [app-client] (ecmascript) <export default as Barcode>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldAlert$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-alert.js [app-client] (ecmascript) <export default as ShieldAlert>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$skull$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Skull$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/skull.js [app-client] (ecmascript) <export default as Skull>");
+"use client";
+;
+;
+;
+function ReceiptCard({ score, verdictSummary, targetInfo, suspects = [] }) {
+    const isToxic = score < 50;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        initial: {
+            scale: 0.9,
+            opacity: 0
+        },
+        animate: {
+            scale: 1,
+            opacity: 1
+        },
+        transition: {
+            type: "spring",
+            stiffness: 100,
+            damping: 20
+        },
+        className: "relative w-full max-w-md mx-auto bg-[#050505] text-green-500 font-mono shadow-[0_0_50px_rgba(0,255,0,0.1)] overflow-hidden border border-green-900/50 rounded-sm",
+        style: {
+            backgroundImage: `
+                    linear-gradient(rgba(0, 255, 0, 0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 255, 0, 0.03) 1px, transparent 1px)
+                `,
+            backgroundSize: '20px 20px'
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 pointer-events-none bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.5)_50%)] bg-[length:100%_4px] opacity-20 z-20"
+            }, void 0, false, {
+                fileName: "[project]/components/ReceiptCard.tsx",
+                lineNumber: 43,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "p-6 pb-12 relative z-10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center border-b border-green-900/50 pb-6 mb-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                animate: {
+                                    opacity: [
+                                        1,
+                                        0.5,
+                                        1
+                                    ]
+                                },
+                                transition: {
+                                    duration: 2,
+                                    repeat: Infinity
+                                },
+                                className: "flex items-center justify-center gap-2 text-red-500 mb-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldAlert$3e$__["ShieldAlert"], {
+                                        className: "w-5 h-5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 53,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        className: "text-xl font-bold tracking-widest uppercase",
+                                        children: "SYSTEM BREACH DETECTED"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldAlert$3e$__["ShieldAlert"], {
+                                        className: "w-5 h-5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 48,
+                                columnNumber: 21
+                            }, this),
+                            targetInfo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col items-center relative",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative mb-6 group",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 bg-red-500 blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 rounded-full"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/ReceiptCard.tsx",
+                                                lineNumber: 61,
+                                                columnNumber: 33
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-32 h-32 rounded-full border-2 border-red-500 overflow-hidden relative shadow-[0_0_20px_rgba(220,38,38,0.5)]",
+                                                children: [
+                                                    targetInfo.profile_pic ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: targetInfo.profile_pic,
+                                                        alt: "Target",
+                                                        className: "w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500",
+                                                        onError: (e)=>{
+                                                            e.target.style.display = 'none';
+                                                            e.target.nextElementSibling?.classList.remove('hidden');
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                                        lineNumber: 64,
+                                                        columnNumber: 41
+                                                    }, this) : null,
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: `w-full h-full bg-black flex items-center justify-center ${targetInfo.profile_pic ? 'hidden' : ''}`,
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                                                            className: "w-16 h-16 text-red-900"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/ReceiptCard.tsx",
+                                                            lineNumber: 75,
+                                                            columnNumber: 41
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                                        lineNumber: 74,
+                                                        columnNumber: 37
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "absolute inset-0 flex items-center justify-center pointer-events-none",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "w-[90%] h-[90%] border border-red-500/30 rounded-full animate-ping absolute"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/ReceiptCard.tsx",
+                                                            lineNumber: 80,
+                                                            columnNumber: 41
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                                        lineNumber: 79,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/ReceiptCard.tsx",
+                                                lineNumber: 62,
+                                                columnNumber: 33
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-red-600 text-black text-[10px] font-black px-3 py-0.5 uppercase tracking-widest shadow-lg",
+                                                children: "TARGET ACQUIRED"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/ReceiptCard.tsx",
+                                                lineNumber: 83,
+                                                columnNumber: 33
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-lg font-bold uppercase text-white tracking-wider",
+                                        children: targetInfo.full_name
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 87,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs text-green-600 font-bold tracking-widest",
+                                        children: [
+                                            "@",
+                                            targetInfo.username
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 88,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 59,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ReceiptCard.tsx",
+                        lineNumber: 47,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center mb-8 relative",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[10px] uppercase font-bold text-green-700 mb-2 tracking-[0.2em]",
+                                children: "LOYALTY INTEGRITY SCORE"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 95,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: `text-7xl font-black tracking-tighter leading-none ${isToxic ? 'text-red-500' : 'text-green-500'} drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "animate-pulse",
+                                        children: score
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 97,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-2xl text-green-900 ml-1",
+                                        children: "%"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 98,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 96,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ReceiptCard.tsx",
+                        lineNumber: 94,
+                        columnNumber: 17
+                    }, this),
+                    verdictSummary && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-8 p-4 bg-red-950/20 border border-red-900/50 rounded relative overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute top-0 left-0 w-1 h-full bg-red-600"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 105,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-start gap-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$skull$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Skull$3e$__["Skull"], {
+                                        className: "w-5 h-5 text-red-500 shrink-0 mt-0.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 107,
+                                        columnNumber: 29
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-[10px] uppercase font-bold text-red-500 mb-1 tracking-widest",
+                                                children: "AI FORENSIC VERDICT"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/ReceiptCard.tsx",
+                                                lineNumber: 109,
+                                                columnNumber: 33
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm font-bold leading-relaxed text-red-100/90 font-mono",
+                                                children: [
+                                                    '"',
+                                                    verdictSummary,
+                                                    '"'
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/ReceiptCard.tsx",
+                                                lineNumber: 110,
+                                                columnNumber: 33
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 108,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 106,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ReceiptCard.tsx",
+                        lineNumber: 104,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "border-t border-green-900/50 pt-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex justify-between items-center mb-4 text-[10px] font-bold uppercase text-green-700 tracking-widest",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "DETECTED THREATS"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 121,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "STATUS: ACTIVE"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 122,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 120,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-3 font-mono text-xs max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-green-900 scrollbar-track-black",
+                                children: suspects.length > 0 ? suspects.map((suspect, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col gap-1 group",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-2 text-green-400",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-green-800",
+                                                        children: ">"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                                        lineNumber: 130,
+                                                        columnNumber: 41
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "font-bold group-hover:text-green-300 transition-colors",
+                                                        children: [
+                                                            "@",
+                                                            suspect.username
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                                        lineNumber: 131,
+                                                        columnNumber: 41
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/ReceiptCard.tsx",
+                                                lineNumber: 129,
+                                                columnNumber: 37
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "pl-5 text-[10px] text-green-600/80 uppercase tracking-tight",
+                                                children: [
+                                                    "[REASON: ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-red-400",
+                                                        children: suspect.reason
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                                        lineNumber: 134,
+                                                        columnNumber: 50
+                                                    }, this),
+                                                    "]"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/ReceiptCard.tsx",
+                                                lineNumber: 133,
+                                                columnNumber: 37
+                                            }, this)
+                                        ]
+                                    }, index, true, {
+                                        fileName: "[project]/components/ReceiptCard.tsx",
+                                        lineNumber: 128,
+                                        columnNumber: 33
+                                    }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-center text-xs text-green-800 py-4",
+                                    children: "NO ANOMALIES DETECTED IN NETWORK."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ReceiptCard.tsx",
+                                    lineNumber: 139,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 125,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ReceiptCard.tsx",
+                        lineNumber: 119,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-8 pt-6 border-t border-green-900/50 text-center space-y-2 opacity-50",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$barcode$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Barcode$3e$__["Barcode"], {
+                                className: "w-full h-8 text-green-800"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 146,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[8px] uppercase tracking-[0.3em] text-green-800",
+                                children: "ENCRYPTED // CAUGHTIN4K.AI // DO NOT DISTRIBUTE"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ReceiptCard.tsx",
+                                lineNumber: 147,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ReceiptCard.tsx",
+                        lineNumber: 145,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ReceiptCard.tsx",
+                lineNumber: 45,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ReceiptCard.tsx",
+        lineNumber: 29,
+        columnNumber: 9
+    }, this);
+}
+_c = ReceiptCard;
+var _c;
+__turbopack_context__.k.register(_c, "ReceiptCard");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/app/data:6f5d39 [app-client] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
+"use strict";
+
+/* __next_internal_action_entry_do_not_use__ [{"40687f0658683bba8c41f8229225cb229dae4ec96f":"startPublicScan"},"app/actions.ts",""] */ __turbopack_context__.s([
+    "startPublicScan",
+    ()=>startPublicScan
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-client] (ecmascript)");
+"use turbopack no side effects";
+;
+var startPublicScan = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createServerReference"])("40687f0658683bba8c41f8229225cb229dae4ec96f", __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["findSourceMapURL"], "startPublicScan"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vYWN0aW9ucy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzZXJ2ZXJcIjtcblxuaW1wb3J0IHsgaW5uZ2VzdCB9IGZyb20gXCJAL2lubmdlc3QvY2xpZW50XCI7XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB0cmlnZ2VyU2NhbihzY2FuSWQ6IHN0cmluZykge1xuICAgIGF3YWl0IGlubmdlc3Quc2VuZCh7XG4gICAgICAgIG5hbWU6IFwiYW5hbHlzaXMuc3VibWl0dGVkXCIsXG4gICAgICAgIGRhdGE6IHsgc2NhbklkIH0sXG4gICAgfSk7XG59XG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzdGFydFB1YmxpY1NjYW4oZGF0YTogeyB0YXJnZXRfdXNlcm5hbWU6IHN0cmluZzsgdGFyZ2V0X2dlbmRlcjogXCJtYWxlXCIgfCBcImZlbWFsZVwiIH0pIHtcbiAgICBjb25zb2xlLmxvZyhcIvCfmoAgU2VuZGluZyByZXF1ZXN0IHRvIFB5dGhvbi4uLlwiLCBkYXRhKTtcbiAgICB0cnkge1xuICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKFwiaHR0cDovLzEyNy4wLjAuMTo4MDAwL3NjYW5cIiwge1xuICAgICAgICAgICAgbWV0aG9kOiBcIlBPU1RcIixcbiAgICAgICAgICAgIGhlYWRlcnM6IHtcbiAgICAgICAgICAgICAgICBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIixcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKSxcbiAgICAgICAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsIC8vIEVuc3VyZSBubyBjYWNoaW5nXG4gICAgICAgIH0pO1xuXG4gICAgICAgIGlmICghcmVzcG9uc2Uub2spIHtcbiAgICAgICAgICAgIGNvbnN0IGVycm9yVGV4dCA9IGF3YWl0IHJlc3BvbnNlLnRleHQoKTtcbiAgICAgICAgICAgIGNvbnNvbGUuZXJyb3IoYE1pY3Jvc2VydmljZSBlcnJvciAoJHtyZXNwb25zZS5zdGF0dXN9KTpgLCBlcnJvclRleHQpO1xuICAgICAgICAgICAgdHJ5IHtcbiAgICAgICAgICAgICAgICBjb25zdCBlcnJvckpzb24gPSBKU09OLnBhcnNlKGVycm9yVGV4dCk7XG4gICAgICAgICAgICAgICAgcmV0dXJuIHsgc3VjY2VzczogZmFsc2UsIGVycm9yOiBlcnJvckpzb24uZGV0YWlsIHx8IHJlc3BvbnNlLnN0YXR1c1RleHQgfTtcbiAgICAgICAgICAgIH0gY2F0Y2gge1xuICAgICAgICAgICAgICAgIHJldHVybiB7IHN1Y2Nlc3M6IGZhbHNlLCBlcnJvcjogYE1pY3Jvc2VydmljZSBFcnJvcjogJHtyZXNwb25zZS5zdGF0dXNUZXh0fWAgfTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTtcbiAgICAgICAgY29uc29sZS5sb2coXCLinIUgUHl0aG9uIHJlc3BvbnNlIHJlY2VpdmVkOlwiLCByZXN1bHQuc3RhdHVzKTtcbiAgICAgICAgcmV0dXJuIHsgc3VjY2VzczogdHJ1ZSwgZGF0YTogcmVzdWx0IH07XG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcihcIlB1YmxpYyBzY2FuIGZhaWxlZDpcIiwgZXJyb3IpO1xuICAgICAgICByZXR1cm4geyBzdWNjZXNzOiBmYWxzZSwgZXJyb3I6IFwiQ29ubmVjdGlvbiBSZWZ1c2VkLiBJcyBQeXRob24gcnVubmluZz8gKENoZWNrIHBvcnQgODAwMClcIiB9O1xuICAgIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoidVJBV3NCIn0=
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/ScanSelector.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ScanSelector",
+    ()=>ScanSelector
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript) <export default as Globe>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lock.js [app-client] (ecmascript) <export default as Lock>");
+"use client";
+;
+;
+;
+function ScanSelector({ method, setMethod }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex w-full max-w-2xl mx-auto gap-4 mb-8",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: ()=>setMethod("public"),
+                className: `flex-1 relative group overflow-hidden rounded-xl border-2 transition-all duration-300 ${method === "public" ? "border-neon-red bg-black/80 shadow-[0_0_20px_rgba(220,38,38,0.3)]" : "border-gray-800 bg-black/40 hover:border-gray-600"}`,
+                children: [
+                    method === "public" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        layoutId: "active-glow",
+                        className: "absolute inset-0 bg-neon-red/10",
+                        initial: false,
+                        transition: {
+                            type: "spring",
+                            stiffness: 500,
+                            damping: 30
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/components/ScanSelector.tsx",
+                        lineNumber: 22,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative z-10 flex flex-col items-center justify-center py-6 space-y-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"], {
+                                className: `w-8 h-8 ${method === "public" ? "text-neon-red" : "text-gray-500"}`
+                            }, void 0, false, {
+                                fileName: "[project]/components/ScanSelector.tsx",
+                                lineNumber: 30,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: `font-mono font-bold tracking-wider ${method === "public" ? "text-white" : "text-gray-500"}`,
+                                children: "🔓 PUBLIC PROFILE"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ScanSelector.tsx",
+                                lineNumber: 31,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ScanSelector.tsx",
+                        lineNumber: 29,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ScanSelector.tsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: ()=>setMethod("private"),
+                className: `flex-1 relative group overflow-hidden rounded-xl border-2 transition-all duration-300 ${method === "private" ? "border-neon-red bg-black/80 shadow-[0_0_20px_rgba(220,38,38,0.3)]" : "border-gray-800 bg-black/40 hover:border-gray-600"}`,
+                children: [
+                    method === "private" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        layoutId: "active-glow",
+                        className: "absolute inset-0 bg-neon-red/10",
+                        initial: false,
+                        transition: {
+                            type: "spring",
+                            stiffness: 500,
+                            damping: 30
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/components/ScanSelector.tsx",
+                        lineNumber: 45,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative z-10 flex flex-col items-center justify-center py-6 space-y-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                className: `w-8 h-8 ${method === "private" ? "text-neon-red" : "text-gray-500"}`
+                            }, void 0, false, {
+                                fileName: "[project]/components/ScanSelector.tsx",
+                                lineNumber: 53,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: `font-mono font-bold tracking-wider ${method === "private" ? "text-white" : "text-gray-500"}`,
+                                children: "🔒 PRIVATE ACCOUNT"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ScanSelector.tsx",
+                                lineNumber: 54,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ScanSelector.tsx",
+                        lineNumber: 52,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ScanSelector.tsx",
+                lineNumber: 37,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ScanSelector.tsx",
+        lineNumber: 13,
+        columnNumber: 9
+    }, this);
+}
+_c = ScanSelector;
+var _c;
+__turbopack_context__.k.register(_c, "ScanSelector");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/app/dashboard/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Dashboard
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PublicInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/PublicInput.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UploadZone$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/UploadZone.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Ticker$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Ticker.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ReceiptCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ReceiptCard.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$3a$6f5d39__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/app/data:6f5d39 [app-client] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ScanSelector$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ScanSelector.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+function Dashboard() {
+    _s();
+    const [status, setStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("idle");
+    const [scanMethod, setScanMethod] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("public");
+    const [logs, setLogs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [result, setResult] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const handlePublicScan = async (data)=>{
+        console.log("🖱️ Expose Them Now clicked", data);
+        setStatus("scanning");
+        setLogs([]); // Clear previous logs
+        // Dynamic Scanning Text Logic
+        const maleLogs = [
+            "🔍 STALKING HIS FOLLOWING LIST...",
+            "🚩 CHECKING FOR BADDIES...",
+            "💅 ANALYZING HIS TASTE IN WOMEN...",
+            "💀 CALCULATING LOYALTY SCORE..."
+        ];
+        const femaleLogs = [
+            "🔍 STALKING HER FOLLOWING LIST...",
+            "🚩 CHECKING FOR SIMPS & EXES...",
+            "🧢 ANALYZING HER ATTENTION SEEKING...",
+            "💀 CALCULATING LOYALTY SCORE..."
+        ];
+        const sequence = data.gender === "male" ? maleLogs : femaleLogs;
+        // Start log sequence
+        let logIndex = 0;
+        const logInterval = setInterval(()=>{
+            if (logIndex < sequence.length) {
+                setLogs((prev)=>[
+                        ...prev,
+                        sequence[logIndex]
+                    ]);
+                logIndex++;
+            } else {
+                clearInterval(logInterval);
+            }
+        }, 800);
+        try {
+            const scanResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$3a$6f5d39__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["startPublicScan"])({
+                target_username: data.username,
+                target_gender: data.gender
+            });
+            if (scanResult.success) {
+                // Wait for the log sequence to finish mostly before showing result
+                setTimeout(()=>{
+                    setResult({
+                        score: scanResult.data.loyalty_score,
+                        redFlags: [],
+                        targetInfo: scanResult.data.target_info,
+                        suspects: scanResult.data.suspects,
+                        verdictSummary: scanResult.data.verdict
+                    });
+                    setStatus("result");
+                }, sequence.length * 800 + 1000);
+            } else {
+                console.error("Scan failed:", scanResult.error);
+                alert(`Scan Failed: ${scanResult.error}`);
+                setLogs((prev)=>[
+                        ...prev,
+                        `ERROR: ${scanResult.error || "TARGET NOT FOUND OR PRIVATE"}`
+                    ]);
+                setTimeout(()=>setStatus("idle"), 3000);
+            }
+        } catch (error) {
+            console.error("Scan failed:", error);
+            alert("System Failure: See console for details");
+            setLogs((prev)=>[
+                    ...prev,
+                    "SYSTEM FAILURE"
+                ]);
+            setTimeout(()=>setStatus("idle"), 3000);
+        }
+    };
+    const handleUploadScan = ()=>{
+        setStatus("scanning");
+        setLogs([
+            "UPLOADING EVIDENCE...",
+            "EXTRACTING FRAMES...",
+            "ANALYZING MICRO-EXPRESSIONS..."
+        ]);
+        setTimeout(()=>{
+            setResult({
+                score: 45,
+                redFlags: [
+                    "NERVOUS LAUGHTER DETECTED",
+                    "AVOIDING EYE CONTACT",
+                    "DEFENSIVE POSTURE"
+                ],
+                suspects: []
+            });
+            setStatus("result");
+        }, 5000);
+    };
+    const reset = ()=>{
+        setStatus("idle");
+        setLogs([]);
+        setResult(null);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen flex flex-col items-center justify-center p-4 pb-24 relative overflow-hidden bg-black text-white",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full max-w-4xl z-10 pt-20",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center mb-12",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "text-4xl md:text-6xl font-black tracking-tighter text-neon-red animate-glitch mb-4",
+                                children: "DASHBOARD"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard/page.tsx",
+                                lineNumber: 111,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-gray-400 font-mono tracking-widest uppercase",
+                                children: "SELECT YOUR INVESTIGATION METHOD"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard/page.tsx",
+                                lineNumber: 114,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/dashboard/page.tsx",
+                        lineNumber: 110,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-8 min-h-[400px] flex flex-col items-center justify-start",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                            mode: "wait",
+                            children: [
+                                status === "idle" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    initial: {
+                                        opacity: 0,
+                                        y: 20
+                                    },
+                                    animate: {
+                                        opacity: 1,
+                                        y: 0
+                                    },
+                                    exit: {
+                                        opacity: 0,
+                                        y: -20
+                                    },
+                                    className: "w-full flex flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ScanSelector$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScanSelector"], {
+                                            method: scanMethod,
+                                            setMethod: setScanMethod
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/page.tsx",
+                                            lineNumber: 129,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-full mt-8",
+                                            children: scanMethod === "public" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PublicInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PublicInput"], {
+                                                onScan: handlePublicScan,
+                                                isLoading: false
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/page.tsx",
+                                                lineNumber: 133,
+                                                columnNumber: 41
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UploadZone$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                onUpload: handleUploadScan,
+                                                isScanning: false
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/page.tsx",
+                                                lineNumber: 135,
+                                                columnNumber: 41
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/page.tsx",
+                                            lineNumber: 131,
+                                            columnNumber: 33
+                                        }, this)
+                                    ]
+                                }, "idle", true, {
+                                    fileName: "[project]/app/dashboard/page.tsx",
+                                    lineNumber: 122,
+                                    columnNumber: 29
+                                }, this),
+                                status === "scanning" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    initial: {
+                                        opacity: 0
+                                    },
+                                    animate: {
+                                        opacity: 1
+                                    },
+                                    exit: {
+                                        opacity: 0
+                                    },
+                                    className: "w-full max-w-2xl font-mono text-neon-red bg-black/80 p-6 rounded-xl border border-neon-red/30 shadow-[0_0_30px_rgba(220,38,38,0.2)]",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "h-64 overflow-y-auto space-y-2",
+                                        children: [
+                                            logs.map((log, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-sm md:text-base animate-pulse",
+                                                    children: [
+                                                        ">",
+                                                        " ",
+                                                        log
+                                                    ]
+                                                }, i, true, {
+                                                    fileName: "[project]/app/dashboard/page.tsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 41
+                                                }, this)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-3 h-5 bg-neon-red inline-block animate-pulse"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/page.tsx",
+                                                lineNumber: 155,
+                                                columnNumber: 37
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/dashboard/page.tsx",
+                                        lineNumber: 149,
+                                        columnNumber: 33
+                                    }, this)
+                                }, "scanning", false, {
+                                    fileName: "[project]/app/dashboard/page.tsx",
+                                    lineNumber: 142,
+                                    columnNumber: 29
+                                }, this),
+                                status === "result" && result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    initial: {
+                                        opacity: 0,
+                                        scale: 0.9
+                                    },
+                                    animate: {
+                                        opacity: 1,
+                                        scale: 1
+                                    },
+                                    className: "w-full",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ReceiptCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ReceiptCard"], {
+                                            score: result.score,
+                                            verdictSummary: result.verdictSummary,
+                                            targetInfo: result.targetInfo,
+                                            suspects: result.suspects
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/page.tsx",
+                                            lineNumber: 167,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ActionButtons, {
+                                            targetId: "story-capture-zone"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/page.tsx",
+                                            lineNumber: 169,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StoryExport, {
+                                            data: result,
+                                            id: "story-capture-zone"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/page.tsx",
+                                            lineNumber: 170,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-center mt-12",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: reset,
+                                                className: "text-gray-500 hover:text-white font-mono text-sm underline decoration-dotted underline-offset-4 transition-colors",
+                                                children: "[ START NEW INVESTIGATION ]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/page.tsx",
+                                                lineNumber: 173,
+                                                columnNumber: 37
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/page.tsx",
+                                            lineNumber: 172,
+                                            columnNumber: 33
+                                        }, this)
+                                    ]
+                                }, "result", true, {
+                                    fileName: "[project]/app/dashboard/page.tsx",
+                                    lineNumber: 161,
+                                    columnNumber: 29
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/page.tsx",
+                            lineNumber: 120,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/page.tsx",
+                        lineNumber: 119,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/dashboard/page.tsx",
+                lineNumber: 109,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Ticker$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Ticker"], {}, void 0, false, {
+                fileName: "[project]/app/dashboard/page.tsx",
+                lineNumber: 186,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/dashboard/page.tsx",
+        lineNumber: 108,
+        columnNumber: 9
+    }, this);
+}
+_s(Dashboard, "2fuzSRLUpJ0yXCMKRDwYu9H0EUU=");
+_c = Dashboard;
+var _c;
+__turbopack_context__.k.register(_c, "Dashboard");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=_808919d3._.js.map

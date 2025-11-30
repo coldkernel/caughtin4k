@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///Users/quantum/Caughtin4K/inngest/client.ts"],"sourcesContent":["import { Inngest } from \"inngest\";\n\n// Create a client to send and receive events\nexport const inngest = new Inngest({ id: \"caught-in-4k\" });\n"],"names":[],"mappings":";;;;AAAA;;AAGO,MAAM,UAAU,IAAI,2JAAO,CAAC;IAAE,IAAI;AAAe"}},
+    {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":["file:///Users/quantum/Caughtin4K/app/actions.ts"],"sourcesContent":["\"use server\";\n\nimport { inngest } from \"@/inngest/client\";\n\nexport async function triggerScan(scanId: string) {\n    await inngest.send({\n        name: \"analysis.submitted\",\n        data: { scanId },\n    });\n}\n"],"names":[],"mappings":";;;;;AAEA;;;;AAEO,eAAe,YAAY,MAAc;IAC5C,MAAM,4HAAO,CAAC,IAAI,CAAC;QACf,MAAM;QACN,MAAM;YAAE;QAAO;IACnB;AACJ;;;IALsB;;AAAA,+OAAA"}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///Users/quantum/Caughtin4K/.next-internal/server/app/page/actions.js%20%28server%20actions%20loader%29"],"sourcesContent":["export {triggerScan as '40c714fa66993619ac516bc50de55deee0c837c321'} from 'ACTIONS_MODULE0'\n"],"names":[],"mappings":";AAAA"}}]
+}
